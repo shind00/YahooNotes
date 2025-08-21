@@ -6,10 +6,8 @@ from appium.options.android import UiAutomator2Options
 from selenium.webdriver.support import expected_conditions as ec
 from appium.webdriver.common.appiumby import AppiumBy
 from selenium.webdriver.support.wait import WebDriverWait
-
 from Util.Android.adb_commands import adb_action
 
-# A dictionary to store the capabilities for the test session.
 CAPABILITIES = {
     "platformName": "Android",
     "appium:deviceName": "Android",
@@ -19,9 +17,6 @@ CAPABILITIES = {
     "appium:appActivity": "com.yahoo.doubleplay.stream.presentation.view.activity.MainNavigationActivity"
 }
 
-# --- Pytest Fixtures for Setup and Teardown ---
-# This fixture sets up the Appium driver before each test and
-# ensures it is quit after the test finishes, even if it fails.
 @pytest.fixture()
 def driver_setup():
     print("Setting up Appium driver...")
