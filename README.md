@@ -10,3 +10,6 @@
 3) Go to a notes app of your choice
 4) Create a new note
 5) Paste the retrieved headers in a comma-separated fashion
+
+Note: Did also use ADB commands, so if a user needs to run the script, he/she will need to install ADB and it's
+dependencies.
